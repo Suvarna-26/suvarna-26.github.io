@@ -1,71 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>G. Suvarna Latha | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G. Suvarna Latha | Developer Portfolio</title>
   <link rel="stylesheet" href="./portfolio.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f6fa;
-      color: #2f3640;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    header {
-      background-color: #273c75;
-      color: white;
-      padding: 20px 0;
-    }
-    h1 {
-      margin-bottom: 5px;
-    }
-    section {
-      margin: 30px auto;
-      width: 80%;
-      max-width: 700px;
-      text-align: left;
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    a {
-      color: #0097e6;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
+  <!-- Navbar -->
   <header>
-    <h1>G. Suvarna Latha</h1>
-    <p>PL/SQL Developer | Data Analyst | Python Programmer</p>
+    <nav>
+      <h2 class="logo"> Galla Suvarna Latha</h2>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Hello! I'm <b>G. Suvarna Latha</b>, passionate about database management, SQL, and data-driven applications. I enjoy learning new technologies and working on real-world projects.</p>
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>G. Suvarna Latha</span></h1>
+      <h3>Full Stack Developer | React | SQL | JavaScript | Python</h3>
+      <p>I create web applications that are functional, user-friendly, and impactful.</p>
+      <div class="buttons">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="mailto:suvarnalatha581@gmail.com" class="btn btn-outline">Hire Me</a>
+      </div>
+    </div>
   </section>
 
-  <section>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate and dedicated developer skilled in building modern web applications using
+      React, Python and SQL. I enjoy learning, problem-solving, and creating solutions that make a difference.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Python</div>
+      <div class="skill">Power BI</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Git / GitHub</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
     <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Credit Card Fraud Detection Using Machine Learning</h3>
+        <p> Built an ML model to identify fraudulent credit card transactions with high accuracy.</p>
+        <p><strong>Tech:</strong>Python,Machine Learning,Artificial Intelligence</p>
+        <a href="https://github.com/Suvarna-26" target="_blank" class="btn">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal portfolio built using HTML, CSS, and JS.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        <a href="https://github.com/Suvarna-26" target="_blank" class="btn">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>E-Commerce Website</h3>
+        <p>Full-stack shopping platform with cart and authentication.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        <a href="https://github.com/Suvarna-26" target="_blank" class="btn">View on GitHub</a>
+      </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s connect! I’d love to collaborate or discuss opportunities.</p>
     <ul>
-      <li><b>Credit Card Fraud Detection</b> – Machine Learning model detecting fraud with 96% accuracy. [<a href="https://github.com/Suvarna-26/Fraud-Detection">GitHub Link</a>]</li>
-      <li><b>Sales Dashboard</b> – Power BI dashboard visualizing sales and profit by region.</li>
-      <li><b>SQL Automation Scripts</b> – Automated data extraction using PL/SQL procedures.</li>
+      <li>📧 <a href="mailto:suvarnalatha581@gmail.com">suvarnalatha581@gmail.com</a></li>
+      <li>📞 8143820527</li>
+      <li>🔗 <a href="https://linkedin.com/in/suvarna-latha-galla-1a5452295" target="_blank">LinkedIn</a></li>
+      <li>💻 <a href="https://github.com/Suvarna-26" target="_blank">GitHub</a></li>
     </ul>
   </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>📧 <a href="mailto:suvarnalatha581@gmail.com">suvarnalatha581@gmail.com</a></p>
-    <p>🔗 <a href="https://linkedin.com/in/suvarna-latha-galla-1a5452295">LinkedIn</a> | 
-       💻 <a href="https://github.com/Suvarna-26">GitHub</a></p>
-  </section>
+  <footer>
+    <p>© 2025 G. Suvarna Latha | All Rights Reserved</p>
+  </footer>
+  <script src="./portfoilo.js"></script>
 </body>
 </html>
