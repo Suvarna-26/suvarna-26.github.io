@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+.logo span {
+  color: #0078ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #0078ff;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(120deg, #0078ff, #00c6ff);
+  color: #fff;
+  padding: 0 10%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero h1 span {
+  color: #ffe600;
+}
+.hero p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+.btn {
+  background: #fff;
+  color: #0078ff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0.5rem;
+  display: inline-block;
+}
+.btn-outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Sections */
+section {
+  padding: 5rem 10%;
+}
+
+.about, .skills, .projects, .contact {
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #0078ff;
+  margin-bottom: 1rem;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+.skill {
+  background: #e7f0ff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+.project-card h3 {
+  color: #0078ff;
+}
+.project-card a {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Contact */
+.contact ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+.contact li {
+  margin: 0.5rem 0;
+}
+.contact a {
+  color: #0078ff;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background: #0078ff;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
